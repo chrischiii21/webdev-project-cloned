@@ -1,0 +1,122 @@
+---
+// Trade Features Component - Reusable section for trade-specific features
+import Badge from "../ui/Badge.astro";
+
+export interface Props {
+    trade: "hvac" | "plumbing";
+    backLink?: string;
+    title: string;
+    subtitle?: string;
+    benefits: Array<{
+        title: string;
+        description: string;
+    }>;
+    solutionsTitle: string;
+    solutions: Array<{
+        title: string;
+        description: string;
+    }>;
+}
+
+const {
+    trade,
+    backLink = "/trades-we-serve",
+    title,
+    subtitle,
+    benefits,
+    solutionsTitle,
+    solutions,
+} = Astro.props;
+
+// Set colors based on trade
+const accentColor = trade === "hvac" ? "#0A1931" : "#F48C06";
+const badgeText = trade === "hvac" ? "HVAC" : "PLUMBING";
+---
+
+<section class="relative py-20 md:py-32 px-4 md:px-6 lg:px-8 overflow-hidden">
+    <!-- Background Elements -->
+    <div class="absolute inset-0 bg-gradient-to-br from-[#F5F5F5] via-white to-[#F8FAFC]"></div>
+    <div class="absolute top-0 right-0 w-96 h-96 bg-[#F48C06]/5 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 left-0 w-80 h-80 bg-[#0A1931]/5 rounded-full blur-3xl"></div>
+    
+    <div class="relative z-10 max-w-7xl mx-auto">
+
+        <!-- Section Header -->
+        <div class="text-center mb-20">
+            <span
+                class="text-sm font-semibold tracking-widest uppercase"
+                style="color: var(--helios-orange);"
+            >
+                TRADE SOLUTIONS
+            </span>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0A1931] mb-8 leading-tight mt-4">
+                {title}
+            </h2>
+            {
+                subtitle && (
+                    <p class="text-xl md:text-2xl text-[#7E7E7E] max-w-4xl mx-auto leading-relaxed">
+                        {subtitle}{" "}
+                        <span
+                            class="font-bold text-[#0A1931]"
+                        >
+                            Build</span><span
+                            class="font-bold text-[#F48C06]"
+                        >Pro
+                        </span>
+                        .
+                    </p>
+                )
+            }
+        </div>
+
+        <!-- Benefits Grid -->
+        <div class="mb-24">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                {
+                    benefits.map((benefit, index) => (
+                        <div class="group relative">
+                            <!-- Main Card -->
+                            <div class="relative bg-white rounded-3xl p-8 border border-[#99B0BB]/10 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 overflow-hidden">
+                                <!-- Decorative gradient overlay -->
+                                <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#F48C06]/10 to-transparent rounded-bl-full"></div>
+                                
+                                <!-- Icon -->
+                                <div class="relative mb-6">
+                                    <div
+                                        class="w-14 h-14 rounded-2xl flex items-center justify-center shadow-xl transition-all duration-300 group-hover:scale-110 group-hover:rotate-3"
+                                        style={`background: linear-gradient(135deg, ${accentColor}, ${accentColor}DD);`}
+                                    >
+                                        <svg
+                                            class="w-7 h-7 text-white"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="2.5"
+                                                d="M5 13l4 4L19 7"
+                                            />
+                                        </svg>
+                                    </div>
+                                </div>
+                                
+                                <!-- Content -->
+                                <div class="relative">
+                                    <h4 class="text-xl font-bold text-[#0A1931] mb-3 group-hover:text-[#F48C06] transition-colors duration-300">
+                                        {benefit.title}
+                                    </h4>
+                                    <p class="text-base text-[#7E7E7E] leading-relaxed">
+                                        {benefit.description}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    ))
+                }
+            </div>
+        </div>
+
+    </div>
+</section>

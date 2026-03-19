@@ -1,0 +1,730 @@
+---
+// Reviews Section with Horizontal Layout
+
+---
+
+<section
+  class="py-20 relative overflow-hidden"
+  style="background: linear-gradient(135deg, var(--midnight-navy) 0%, color-mix(in srgb, var(--midnight-navy) 90%, var(--steel-pewter) 10%) 100%);"
+>
+  <div class="max-w-7xl mx-auto px-8 relative z-10">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <span
+        class="text-sm font-semibold tracking-widest uppercase"
+        style="color: var(--helios-orange);"
+      >
+        CLIENT SUCCESS STORIES
+      </span>
+      <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white mt-4">
+        Real Results from <span style="color: var(--helios-orange);"
+          >Real Contractors</span
+        >
+      </h2>
+      <p
+        class="text-lg max-w-4xl mx-auto leading-relaxed"
+        style="color: var(--steel-pewter);"
+      >
+        See how HVAC and plumbing contractors transformed their businesses with
+        BuildPro websites.
+      </p>
+    </div>
+
+    <!-- Reviews Carousel -->
+    <div
+      class="bg-white rounded-3xl overflow-hidden shadow-2xl border border-gray-100 w-full"
+    >
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-0">
+        <!-- Image Section - Fixed with Auto Carousel -->
+        <div
+          class="relative h-80 md:h-auto overflow-hidden p-4 flex items-center justify-center bg-white"
+        >
+          <div class="relative w-full h-full">
+            <img
+              src="/images/img1.jpg"
+              alt="HVAC and plumbing work"
+              class="image-carousel w-full h-full object-cover rounded-2xl transition-opacity duration-500 ease-in-out opacity-100"
+              data-image="0"
+            />
+          </div>
+        </div>
+
+        <!-- Content Section - Carousel -->
+        <div class="relative overflow-hidden">
+          <div class="reviews-container">
+            <div
+              class="reviews-track flex transition-transform duration-500 ease-in-out"
+            >
+              <!-- Review 1 - HVAC -->
+              <div
+                class="review-slide flex-shrink-0 w-full p-8 lg:p-12 flex flex-col justify-between bg-white"
+              >
+                <div>
+                  <div class="flex items-center justify-between mb-6">
+                    <div>
+                      <span
+                        class="inline-block px-3 py-1 rounded-full text-xs font-semibold tracking-wider uppercase mb-2"
+                        style="background: color-mix(in srgb, var(--helios-orange) 15%, transparent); color: var(--helios-orange);"
+                        >Success Story</span
+                      >
+                      <h3
+                        class="text-2xl font-bold"
+                        style="color: var(--midnight-navy);"
+                      >
+                        HVAC Company Transformation
+                      </h3>
+                    </div>
+                    <div class="flex gap-1 text-xl">
+                      <span style="color: var(--helios-orange);">★★★★★</span>
+                    </div>
+                  </div>
+
+                  <p
+                    class="text-base leading-relaxed mb-6 font-medium text-gray-300"
+                  >
+                    "CoolAir Pro saw a 340% increase in qualified leads within 3
+                    months of launching their new website. Our
+                    conversion-focused design and local SEO strategy transformed
+                    their online presence. The leads keep coming!"
+                  </p>
+
+                  <!-- Key Metrics -->
+                  <div
+                    class="grid grid-cols-2 gap-3 mb-6 pb-6 border-b border-gray-200"
+                  >
+                    <div>
+                      <div
+                        class="text-xl font-bold"
+                        style="color: var(--helios-orange);"
+                      >
+                        340%
+                      </div>
+                      <div class="text-xs" style="color: var(--steel-pewter);">
+                        Lead Increase
+                      </div>
+                    </div>
+                    <div>
+                      <div
+                        class="text-xl font-bold"
+                        style="color: var(--helios-orange);"
+                      >
+                        3 months
+                      </div>
+                      <div class="text-xs" style="color: var(--steel-pewter);">
+                        Time to Results
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Client Info -->
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="w-12 h-12 rounded-full flex items-center justify-center font-bold text-white text-sm"
+                      style="background: var(--helios-orange);"
+                    >
+                      JM
+                    </div>
+                    <div>
+                      <div
+                        class="font-bold text-sm"
+                        style="color: var(--midnight-navy);"
+                      >
+                        Jake Martinez
+                      </div>
+                      <div class="text-xs" style="color: var(--steel-pewter);">
+                        CoolAir Pro, Phoenix
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex gap-2">
+                    <button
+                      class="carousel-prev-inner w-10 h-10 rounded-full transition-all hover:scale-110 flex items-center justify-center cursor-pointer"
+                      style="background: var(--helios-orange);"
+                    >
+                      <svg
+                        class="w-5 h-5 text-white"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M15 19l-7-7 7-7"></path>
+                      </svg>
+                    </button>
+                    <button
+                      class="carousel-next-inner w-10 h-10 rounded-full transition-all hover:scale-110 flex items-center justify-center cursor-pointer"
+                      style="background: var(--helios-orange);"
+                    >
+                      <svg
+                        class="w-5 h-5 text-white"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M9 5l7 7-7 7"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Review 2 - Plumbing -->
+              <div
+                class="review-slide flex-shrink-0 w-full p-8 lg:p-12 flex flex-col justify-between bg-white"
+              >
+                <div>
+                  <div class="flex items-center justify-between mb-6">
+                    <div>
+                      <span
+                        class="inline-block px-3 py-1 rounded-full text-xs font-semibold tracking-wider uppercase mb-2"
+                        style="background: color-mix(in srgb, var(--helios-orange) 15%, transparent); color: var(--helios-orange);"
+                        >Success Story</span
+                      >
+                      <h3
+                        class="text-2xl font-bold"
+                        style="color: var(--midnight-navy);"
+                      >
+                        Plumbing Service Growth
+                      </h3>
+                    </div>
+                    <div class="flex gap-1 text-xl">
+                      <span style="color: var(--helios-orange);">★★★★★</span>
+                    </div>
+                  </div>
+
+                  <p
+                    class="text-base leading-relaxed mb-6 font-medium"
+                    style="color: var(--steel-pewter);"
+                  >
+                    "Rapid Plumbing Pro doubled their emergency call volume and
+                    expanded to 3 new service areas after launching their
+                    mobile-optimized website with integrated booking system. Our
+                    phone hasn't stopped ringing!"
+                  </p>
+
+                  <!-- Key Metrics -->
+                  <div
+                    class="grid grid-cols-2 gap-3 mb-6 pb-6 border-b border-gray-200"
+                  >
+                    <div>
+                      <div
+                        class="text-xl font-bold"
+                        style="color: var(--helios-orange);"
+                      >
+                        200%
+                      </div>
+                      <div class="text-xs" style="color: var(--steel-pewter);">
+                        Call Volume
+                      </div>
+                    </div>
+                    <div>
+                      <div
+                        class="text-xl font-bold"
+                        style="color: var(--helios-orange);"
+                      >
+                        3 areas
+                      </div>
+                      <div class="text-xs" style="color: var(--steel-pewter);">
+                        Expansion
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Client Info -->
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="w-12 h-12 rounded-full flex items-center justify-center font-bold text-white text-sm"
+                      style="background: var(--helios-orange);"
+                    >
+                      SR
+                    </div>
+                    <div>
+                      <div
+                        class="font-bold text-sm"
+                        style="color: var(--midnight-navy);"
+                      >
+                        Sarah Rodriguez
+                      </div>
+                      <div class="text-xs" style="color: var(--steel-pewter);">
+                        Rapid Plumbing, Denver
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex gap-2">
+                    <button
+                      class="carousel-prev-inner w-10 h-10 rounded-full transition-all hover:scale-110 flex items-center justify-center cursor-pointer"
+                      style="background: var(--helios-orange);"
+                    >
+                      <svg
+                        class="w-5 h-5 text-white"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M15 19l-7-7 7-7"></path>
+                      </svg>
+                    </button>
+                    <button
+                      class="carousel-next-inner w-10 h-10 rounded-full transition-all hover:scale-110 flex items-center justify-center cursor-pointer"
+                      style="background: var(--helios-orange);"
+                    >
+                      <svg
+                        class="w-5 h-5 text-white"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M9 5l7 7-7 7"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Review 3 - HVAC -->
+              <div
+                class="review-slide flex-shrink-0 w-full p-8 lg:p-12 flex flex-col justify-between bg-white"
+              >
+                <div>
+                  <div class="flex items-center justify-between mb-6">
+                    <div>
+                      <span
+                        class="inline-block px-3 py-1 rounded-full text-xs font-semibold tracking-wider uppercase mb-2"
+                        style="background: color-mix(in srgb, var(--helios-orange) 15%, transparent); color: var(--helios-orange);"
+                        >Success Story</span
+                      >
+                      <h3
+                        class="text-2xl font-bold"
+                        style="color: var(--midnight-navy);"
+                      >
+                        HVAC Expansion Success
+                      </h3>
+                    </div>
+                    <div class="flex gap-1 text-xl">
+                      <span style="color: var(--helios-orange);">★★★★★</span>
+                    </div>
+                  </div>
+
+                  <p
+                    class="text-base leading-relaxed mb-6 font-medium"
+                    style="color: var(--steel-pewter);"
+                  >
+                    "ComfortZone HVAC tripled their service requests and
+                    expanded their team by 40% after their new website launched
+                    with advanced scheduling and customer portal features. We're
+                    booking jobs weeks in advance!"
+                  </p>
+
+                  <!-- Key Metrics -->
+                  <div
+                    class="grid grid-cols-2 gap-3 mb-6 pb-6 border-b border-gray-200"
+                  >
+                    <div>
+                      <div
+                        class="text-xl font-bold"
+                        style="color: var(--helios-orange);"
+                      >
+                        300%
+                      </div>
+                      <div class="text-xs" style="color: var(--steel-pewter);">
+                        Service Requests
+                      </div>
+                    </div>
+                    <div>
+                      <div
+                        class="text-xl font-bold"
+                        style="color: var(--helios-orange);"
+                      >
+                        40%
+                      </div>
+                      <div class="text-xs" style="color: var(--steel-pewter);">
+                        Team Growth
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Client Info -->
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="w-12 h-12 rounded-full flex items-center justify-center font-bold text-white text-sm"
+                      style="background: var(--helios-orange);"
+                    >
+                      DK
+                    </div>
+                    <div>
+                      <div
+                        class="font-bold text-sm"
+                        style="color: var(--midnight-navy);"
+                      >
+                        David Kim
+                      </div>
+                      <div class="text-xs" style="color: var(--steel-pewter);">
+                        ComfortZone HVAC, Austin
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex gap-2">
+                    <button
+                      class="carousel-prev-inner w-10 h-10 rounded-full transition-all hover:scale-110 flex items-center justify-center cursor-pointer"
+                      style="background: var(--helios-orange);"
+                    >
+                      <svg
+                        class="w-5 h-5 text-white"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M15 19l-7-7 7-7"></path>
+                      </svg>
+                    </button>
+                    <button
+                      class="carousel-next-inner w-10 h-10 rounded-full transition-all hover:scale-110 flex items-center justify-center cursor-pointer"
+                      style="background: var(--helios-orange);"
+                    >
+                      <svg
+                        class="w-5 h-5 text-white"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M9 5l7 7-7 7"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Review 4 - Plumbing -->
+              <div
+                class="review-slide flex-shrink-0 w-full p-8 lg:p-12 flex flex-col justify-between bg-white"
+              >
+                <div>
+                  <div class="flex items-center justify-between mb-6">
+                    <div>
+                      <span
+                        class="inline-block px-3 py-1 rounded-full text-xs font-semibold tracking-wider uppercase mb-2"
+                        style="background: color-mix(in srgb, var(--helios-orange) 15%, transparent); color: var(--helios-orange);"
+                        >Success Story</span
+                      >
+                      <h3
+                        class="text-2xl font-bold"
+                        style="color: var(--midnight-navy);"
+                      >
+                        Emergency Plumbing Growth
+                      </h3>
+                    </div>
+                    <div class="flex gap-1 text-xl">
+                      <span style="color: var(--helios-orange);">★★★★★</span>
+                    </div>
+                  </div>
+
+                  <p
+                    class="text-base leading-relaxed mb-6 font-medium"
+                    style="color: var(--steel-pewter);"
+                  >
+                    "ProFlow Plumbing increased their emergency call response
+                    rate by 180% with a website that highlights their 24/7
+                    availability and rapid response times. Customers trust us
+                    immediately!"
+                  </p>
+
+                  <!-- Key Metrics -->
+                  <div
+                    class="grid grid-cols-2 gap-3 mb-6 pb-6 border-b border-gray-200"
+                  >
+                    <div>
+                      <div
+                        class="text-xl font-bold"
+                        style="color: var(--helios-orange);"
+                      >
+                        180%
+                      </div>
+                      <div class="text-xs" style="color: var(--steel-pewter);">
+                        Response Rate
+                      </div>
+                    </div>
+                    <div>
+                      <div
+                        class="text-xl font-bold"
+                        style="color: var(--helios-orange);"
+                      >
+                        24/7
+                      </div>
+                      <div class="text-xs" style="color: var(--steel-pewter);">
+                        Availability
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Client Info -->
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="w-12 h-12 rounded-full flex items-center justify-center font-bold text-white text-sm"
+                      style="background: var(--helios-orange);"
+                    >
+                      MC
+                    </div>
+                    <div>
+                      <div
+                        class="font-bold text-sm"
+                        style="color: var(--midnight-navy);"
+                      >
+                        Marcus Chen
+                      </div>
+                      <div class="text-xs" style="color: var(--steel-pewter);">
+                        ProFlow Plumbing, Portland
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex gap-2">
+                    <button
+                      class="carousel-prev-inner w-10 h-10 rounded-full transition-all hover:scale-110 flex items-center justify-center cursor-pointer"
+                      style="background: var(--helios-orange);"
+                    >
+                      <svg
+                        class="w-5 h-5 text-white"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M15 19l-7-7 7-7"></path>
+                      </svg>
+                    </button>
+                    <button
+                      class="carousel-next-inner w-10 h-10 rounded-full transition-all hover:scale-110 flex items-center justify-center cursor-pointer"
+                      style="background: var(--helios-orange);"
+                    >
+                      <svg
+                        class="w-5 h-5 text-white"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M9 5l7 7-7 7"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .reviews-container {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .reviews-track {
+    will-change: transform;
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .review-slide {
+    min-width: 100%;
+    flex-shrink: 0;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const reviewsTrack = document.querySelector(
+      ".reviews-track",
+    ) as HTMLElement | null;
+    const reviewSlides = document.querySelectorAll(".review-slide");
+    const prevBtnInner = document.querySelectorAll(".carousel-prev-inner");
+    const nextBtnInner = document.querySelectorAll(".carousel-next-inner");
+    const reviewsContainer = document.querySelector(
+      ".reviews-container",
+    ) as HTMLElement | null;
+    const images = document.querySelectorAll(".image-carousel");
+
+    if (!reviewsTrack) return;
+
+    const originalSlides = Array.from(reviewSlides);
+    const totalSlides = originalSlides.length;
+
+    // Clone all slides and append to create infinite loop
+    originalSlides.forEach((slide) => {
+      const clone = slide.cloneNode(true) as HTMLElement;
+      reviewsTrack.appendChild(clone);
+    });
+
+    let currentSlide = 0;
+    let currentImageIndex = 0;
+    const totalImages = images.length;
+    let autoSlideInterval: ReturnType<typeof setInterval> | null = null;
+    let autoImageInterval: ReturnType<typeof setInterval> | null = null;
+    let isTransitioning = false;
+
+    function updateCarousel(smooth = true) {
+      if (!reviewsTrack) return;
+
+      if (smooth) {
+        reviewsTrack.style.transition =
+          "transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)";
+      } else {
+        reviewsTrack.style.transition = "none";
+      }
+
+      const translateX = -currentSlide * 100;
+      reviewsTrack.style.transform = `translateX(${translateX}%)`;
+    }
+
+    function updateImages() {
+      images.forEach((img, index) => {
+        if (index === currentImageIndex) {
+          img.classList.remove("opacity-0");
+          img.classList.add("opacity-100");
+        } else {
+          img.classList.remove("opacity-100");
+          img.classList.add("opacity-0");
+        }
+      });
+    }
+
+    function nextSlide() {
+      if (isTransitioning) return;
+      isTransitioning = true;
+
+      currentSlide++;
+      updateCarousel(true);
+
+      // When we reach the cloned slides, reset to the beginning
+      if (currentSlide >= totalSlides) {
+        setTimeout(() => {
+          currentSlide = 0;
+          updateCarousel(false);
+          isTransitioning = false;
+        }, 600);
+      } else {
+        setTimeout(() => {
+          isTransitioning = false;
+        }, 600);
+      }
+    }
+
+    function prevSlide() {
+      if (isTransitioning) return;
+      isTransitioning = true;
+
+      if (currentSlide === 0) {
+        // Jump to the last cloned slide instantly
+        currentSlide = totalSlides;
+        updateCarousel(false);
+
+        setTimeout(() => {
+          currentSlide--;
+          updateCarousel(true);
+          setTimeout(() => {
+            isTransitioning = false;
+          }, 600);
+        }, 20);
+      } else {
+        currentSlide--;
+        updateCarousel(true);
+        setTimeout(() => {
+          isTransitioning = false;
+        }, 600);
+      }
+    }
+
+    function nextImage() {
+      currentImageIndex = (currentImageIndex + 1) % totalImages;
+      updateImages();
+    }
+
+    function startAutoSlide() {
+      autoSlideInterval = setInterval(nextSlide, 6000);
+    }
+
+    function startAutoImages() {
+      autoImageInterval = setInterval(nextImage, 5000);
+    }
+
+    function stopAutoSlide() {
+      if (autoSlideInterval) {
+        clearInterval(autoSlideInterval);
+      }
+    }
+
+    // Re-attach event listeners to all buttons (including cloned ones)
+    function attachButtonListeners() {
+      const allPrevBtns = document.querySelectorAll(".carousel-prev-inner");
+      const allNextBtns = document.querySelectorAll(".carousel-next-inner");
+
+      allPrevBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          prevSlide();
+          stopAutoSlide();
+          startAutoSlide();
+        });
+      });
+
+      allNextBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          nextSlide();
+          stopAutoSlide();
+          startAutoSlide();
+        });
+      });
+    }
+
+    // Pause on hover
+    if (reviewsContainer) {
+      reviewsContainer.addEventListener("mouseenter", stopAutoSlide);
+      reviewsContainer.addEventListener("mouseleave", startAutoSlide);
+    }
+
+    // Initialize
+    attachButtonListeners();
+    updateCarousel(false);
+    updateImages();
+    startAutoSlide();
+    startAutoImages();
+  });
+</script>
