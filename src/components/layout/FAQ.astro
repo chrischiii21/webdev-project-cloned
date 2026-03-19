@@ -1,0 +1,270 @@
+---
+// FAQ Component
+// Modern accordion UI with left content and right accordion
+import Badge from "../ui/Badge.astro";
+---
+
+<section
+    class="bg-gradient-to-br from-[#0a1931] to-[#1a2a4a] py-16 px-8 md:px-4 flex items-center justify-center font-primary"
+>
+    <div
+        class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-12 max-w-7xl w-full items-start"
+    >
+        <!-- Left Content -->
+        <div class="flex flex-col justify-center px-4 lg:px-8">
+            <h2
+                class="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight"
+            >
+                Frequently <span class="text-[#F48C06]">Asked</span> Questions
+            </h2>
+            <p class="text-lg text-[#99B0BB] leading-relaxed max-w-lg">
+                We compiled a list of answers to address your most pressing
+                questions regarding our Services.
+            </p>
+        </div>
+
+        <!-- Right Accordion -->
+        <div class="bg-white/5 rounded-3xl p-10 backdrop-blur-md flex flex-col">
+            <div class="flex flex-col flex-1" id="faqAccordion">
+                <!-- FAQ Item 1 -->
+                <div
+                    class="faq-item border-b border-[#99B0BB]/20 transition-all duration-300"
+                >
+                    <button
+                        class="faq-header w-full flex items-center justify-between py-6 bg-transparent border-none cursor-pointer transition-all duration-300 text-left rounded-lg"
+                        aria-expanded="false"
+                    >
+                        <span
+                            class="text-base font-semibold text-white transition-colors duration-300"
+                        >
+                            How long does a typical project take?
+                        </span>
+                        <svg
+                            class="faq-icon w-6 h-6 text-[#F48C06] flex-shrink-0 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M12 5v14m7-7H5"></path>
+                        </svg>
+                    </button>
+                    <div
+                        class="faq-content hidden overflow-hidden transition-all duration-300"
+                    >
+                        <p
+                            class="text-sm text-[#99B0BB] leading-relaxed px-2 pb-6 animate-slideDown"
+                        >
+                            Project timelines vary depending on the scope and
+                            complexity. Most residential projects take between
+                            1-4 weeks. We'll provide a detailed timeline during
+                            the initial consultation.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div
+                    class="faq-item border-b border-[#99B0BB]/20 transition-all duration-300"
+                >
+                    <button
+                        class="faq-header w-full flex items-center justify-between py-6 bg-transparent border-none cursor-pointer transition-all duration-300 text-left rounded-lg"
+                        aria-expanded="false"
+                    >
+                        <span
+                            class="text-base font-semibold text-white transition-colors duration-300"
+                        >
+                            Do you offer warranties on your work?
+                        </span>
+                        <svg
+                            class="faq-icon w-6 h-6 text-[#F48C06] flex-shrink-0 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M12 5v14m7-7H5"></path>
+                        </svg>
+                    </button>
+                    <div
+                        class="faq-content hidden overflow-hidden transition-all duration-300"
+                    >
+                        <p
+                            class="text-sm text-[#99B0BB] leading-relaxed px-2 pb-6 animate-slideDown"
+                        >
+                            Yes, we stand behind our work. All projects come
+                            with a 1-year warranty on labor and materials.
+                            Extended warranties are available for additional
+                            peace of mind.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div
+                    class="faq-item border-b border-[#99B0BB]/20 transition-all duration-300"
+                >
+                    <button
+                        class="faq-header w-full flex items-center justify-between py-6 bg-transparent border-none cursor-pointer transition-all duration-300 text-left rounded-lg"
+                        aria-expanded="false"
+                    >
+                        <span
+                            class="text-base font-semibold text-white transition-colors duration-300"
+                        >
+                            What payment methods do you accept?
+                        </span>
+                        <svg
+                            class="faq-icon w-6 h-6 text-[#F48C06] flex-shrink-0 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M12 5v14m7-7H5"></path>
+                        </svg>
+                    </button>
+                    <div
+                        class="faq-content hidden overflow-hidden transition-all duration-300"
+                    >
+                        <p
+                            class="text-sm text-[#99B0BB] leading-relaxed px-2 pb-6 animate-slideDown"
+                        >
+                            We accept all major credit cards, checks, bank
+                            transfers, and financing options. A 50% deposit is
+                            required to schedule your project, with the balance
+                            due upon completion.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div
+                    class="faq-item border-b border-[#99B0BB]/20 transition-all duration-300"
+                >
+                    <button
+                        class="faq-header w-full flex items-center justify-between py-6 bg-transparent border-none cursor-pointer transition-all duration-300 text-left rounded-lg"
+                        aria-expanded="false"
+                    >
+                        <span
+                            class="text-base font-semibold text-white transition-colors duration-300"
+                        >
+                            Are your contractors licensed and insured?
+                        </span>
+                        <svg
+                            class="faq-icon w-6 h-6 text-[#F48C06] flex-shrink-0 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M12 5v14m7-7H5"></path>
+                        </svg>
+                    </button>
+                    <div
+                        class="faq-content hidden overflow-hidden transition-all duration-300"
+                    >
+                        <p
+                            class="text-sm text-[#99B0BB] leading-relaxed px-2 pb-6 animate-slideDown"
+                        >
+                            Absolutely. All our contractors are fully licensed,
+                            insured, and bonded. We verify credentials for every
+                            team member and maintain comprehensive liability
+                            coverage.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item transition-all duration-300">
+                    <button
+                        class="faq-header w-full flex items-center justify-between py-6 bg-transparent border-none cursor-pointer transition-all duration-300 text-left rounded-lg"
+                        aria-expanded="false"
+                    >
+                        <span
+                            class="text-base font-semibold text-white transition-colors duration-300"
+                        >
+                            How do I get a free estimate?
+                        </span>
+                        <svg
+                            class="faq-icon w-6 h-6 text-[#F48C06] flex-shrink-0 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M12 5v14m7-7H5"></path>
+                        </svg>
+                    </button>
+                    <div
+                        class="faq-content hidden overflow-hidden transition-all duration-300"
+                    >
+                        <p
+                            class="text-sm text-[#99B0BB] leading-relaxed px-2 pb-6 animate-slideDown"
+                        >
+                            Simply fill out our contact form or call us
+                            directly. We'll schedule a convenient time to visit
+                            your property, assess the work, and provide a
+                            detailed, no-obligation estimate.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Active state styles */
+    .faq-item.active {
+        background: rgba(244, 140, 6, 0.05);
+        border-left: 3px solid #f48c06;
+        padding-left: 1rem;
+        margin-left: -1rem;
+        border-radius: 0.5rem;
+    }
+
+    .faq-item.active .faq-header {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .faq-header:hover span {
+        color: #f48c06;
+    }
+
+    .faq-item.active .faq-icon {
+        transform: rotate(45deg);
+    }
+
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .animate-slideDown {
+        animation: slideDown 0.3s ease-out;
+    }
+</style>
+
+<script src="/src/scripts/faq.js"></script>
