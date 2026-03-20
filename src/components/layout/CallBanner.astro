@@ -17,16 +17,16 @@ const {
 } = Astro.props;
 ---
 
-<section
-    class="py-8 md:py-12 bg-gradient-to-br from-[#0a1931] to-[#1a2a4a]"
->
+<section class="py-8 md:py-12 bg-gradient-to-br from-[#0a1931] to-[#1a2a4a]">
     <div class="max-w-7xl mx-auto">
         <div
             class="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 px-[32px]"
         >
             <!-- Left Side - Message and Phone -->
             <div class="text-center md:text-left">
-                <h3 class="text-4xl md:text-5xl font-bold text-white mb-2 leading-tight">
+                <h3
+                    class="text-4xl md:text-5xl font-bold text-white mb-2 leading-tight"
+                >
                     {message}
                     <a
                         href={`tel:${phoneNumber.replace(/[^0-9+]/g, "")}`}
@@ -42,7 +42,12 @@ const {
 
             <!-- Right Side - CTA Button -->
             <div class="flex-shrink-0">
-                <Button href="/contact" variant="primary" size="md">
+                <Button
+                    href="/contact"
+                    variant="primary"
+                    size="md"
+                    ariaLabel="Navigate to contact page to get your quote"
+                >
                     {buttonText}
                 </Button>
             </div>
